@@ -21,6 +21,3 @@ function solve(s) {
 
 console.log(solve('code'));
 console.log(solve('CODe'));
-// solve('code');
-// solve('CODe');
-// solve('COde');
