@@ -1,29 +1,26 @@
 'use strict';
 
-function tickets(arr) {
-  let kassa = 0;
-  for (let key of arr) {
-    if (key === 25) {
-      kassa += 25;
-    } else if (key === 50) {
-      if (kassa >= 25) {
-        kassa += 50;
-        kassa -= 25;
-      } else {
-        return console.log('NO');
-      }
-    } else if (key === 100) {
-      if (kassa >= 75) {
-        kassa += 100;
-        kassa -= 75;
-      } else {
-        return console.log('NO');
-      }
+function getSum(a, b) {
+  let sum = 0;
+  if (a < b) {
+    for (let i = a; i <= b; i += 1) {
+      sum += i;
     }
   }
-  console.log(kassa, 'kassa');
+  if (a === b) {
+    sum = a;
+  }
+  if (a > b) {
+    for (let i = b; i <= a; i += 1) {
+      sum += i;
+    }
+  }
+  return sum;
 }
 
-tickets([25, 25, 50]);
-tickets([25, 100]);
-tickets([25, 25, 50, 50, 100]);
+getSum(1, 0);
+getSum(1, 2);
+getSum(0, 1);
+getSum(1, 1);
+getSum(-1, 0);
+getSum(-1, 2);
