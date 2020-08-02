@@ -63,13 +63,3 @@ console.log(getScore([0, 1, 2, 3, 4]));
 
 // function iterationOverAnArray(arr) {}
 // iterationOverAnArray([4, 2, 2, 3, 3, 4, 2]);
-
-// if (arr[i] === 1) {
-//   totalScore += scoreLines.one;
-// } else if (arr[i] === 2) {
-//   totalScore += scoreLines.two;
-// } else if (arr[i] === 3) {
-//   totalScore += scoreLines.three;
-// } else if (arr[i] === 4) {
-//   totalScore += scoreLines.four;
-// }
