@@ -1,5 +1,7 @@
 'use strict';
 
+//возвращает самое большое и самое маленькое число
+
 // function highAndLow(numbers) {
 //   const arrNum = numbers.split(' ');
 //   let highNum = arrNum[0];

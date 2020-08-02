@@ -1,5 +1,6 @@
 'use strict';
 
+//сумма чисел от а до  b
 function getSum(a, b) {
   let sum = 0;
   if (a < b) {

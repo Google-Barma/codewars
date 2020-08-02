@@ -1,5 +1,6 @@
 'use strike';
 
+// ошибки при печати
 function printerError(s) {
   const standartColors = [
     'a',
