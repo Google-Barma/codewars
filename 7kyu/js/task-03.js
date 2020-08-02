@@ -1,5 +1,6 @@
 'use strict';
 
+// тетрис, посчет очков по линиям и подъем уровня
 let totalScore = 0;
 let totalLines = 0;
 let playerLevel = 0;
