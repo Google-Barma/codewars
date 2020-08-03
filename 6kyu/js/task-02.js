@@ -6,10 +6,7 @@ function alphabetPosition(text) {
   let numArray = [];
   let textArray = text.toLowerCase().split('');
   for (let char of textArray) {
-    // if (arrayAlphabet.indexOf(char) === -1) continue;
     if (arrayAlphabet.includes(char)) {
-      //   console.log(`Буква: ${char}-${arrayAlphabet.indexOf(char) + 1}`);
-
       numArray.push(arrayAlphabet.indexOf(char) + 1);
     }
   }
