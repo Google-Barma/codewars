@@ -4,8 +4,8 @@ function alphabetPosition(text) {
   const arrayAlphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
 
   let numArray = [];
-  let textArray = text.toLowerCase().split('');
-  for (let char of textArray) {
+  text = text.toLowerCase().split('');
+  for (let char of text) {
     if (arrayAlphabet.includes(char)) {
       numArray.push(arrayAlphabet.indexOf(char) + 1);
     }
@@ -15,4 +15,4 @@ function alphabetPosition(text) {
 }
 
 console.log(alphabetPosition("The sunset sets at twelve o' clock."));
-alphabetPosition('The narwhal bacons at midnight.');
+console.log(alphabetPosition('The narwhal bacons at midnight.'));
