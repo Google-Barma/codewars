@@ -1,14 +1,14 @@
 'use strict';
 
 function generateHashtag(str) {
-  return str.length > 140 || str === ''
-    ? false
-    : '#' +
-        str
-          .split(' ')
-          .filter(item => item !== '')
-          .map(word => word[0].toUpperCase() + word.slice(1))
-          .join('');
+  const hash = str
+    .split(' ')
+    .filter(item => item !== '')
+    .map(word => word[0].toUpperCase() + word.slice(1))
+    .join('');
+  if (hash.length >= 140 || hash === '') return 'false';
+
+  return '#' + hash;
 }
 
 console.log(generateHashtag(' Hello there thanks for trying my Kata'));
