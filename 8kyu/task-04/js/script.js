@@ -7,3 +7,5 @@ function solution(a, b) {
     return a + b + a;
   }
 }
+
+console.log(solution(5, 21));
