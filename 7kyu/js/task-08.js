@@ -2,11 +2,8 @@
 
 //ПОЛИМОРФ
 const polindrome = function (polin) {
-  const reversePolin = polin.split('').reverse();
-  const arrPolin = polin.split('');
-
   for (let i = 0; i < polin.length; i++) {
-    if (reversePolin[i] === arrPolin[i]) {
+    if (polin.split('')[i] === polin.split('').reverse()[i]) {
       continue;
     } else {
       return false;
@@ -16,5 +13,5 @@ const polindrome = function (polin) {
 };
 
 console.log(polindrome('alla'));
-console.log(polindrome('abaraba'));
+console.log(polindrome('abarab'));
 console.log(polindrome('ara'));
