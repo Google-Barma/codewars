@@ -1,6 +1,6 @@
 'use strict';
 
-//ПОЛИМОРФ
+//ПОЛИНДРОМ
 // const polindrome = function (polin) {
 //   for (let i = 0; i < polin.length; i++) {
 //     if (polin.split('')[i] === polin.split('').reverse()[i]) {

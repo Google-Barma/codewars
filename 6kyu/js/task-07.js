@@ -3,7 +3,7 @@
 function spinWords(str) {
   let reversWords = [];
   str.split(' ').forEach(element => {
-    element.length >= 5
+    element.length > 4
       ? reversWords.push(element.split('').reverse().join(''))
       : reversWords.push(element);
   });
