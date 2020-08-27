@@ -9,3 +9,6 @@ function hexStringToRGB(hexString) {
 }
 
 console.log(hexStringToRGB('#FF9933')); //, { r: 255, g: 153, b: 51 })
+console.log(hexStringToRGB('#ffffff'));
+
+console.log(parseInt('ffffff', 16));
